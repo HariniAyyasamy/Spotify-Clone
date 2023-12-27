@@ -1,0 +1,47 @@
+<app-side-navbar></app-side-navbar>
+
+<div class="container">
+  <div class="side-navbar">
+    <!-- Sidebar content goes here -->
+  </div>
+  <div class="main-content">
+    <!-- Update your HTML structure -->
+    <div class="recently-played-section">
+      <h2>Recently Played</h2>
+      <div class="recently-played-list">
+        <div *ngFor="let item of recentlyPlayed" class="song-item">
+          <img [src]="item.imageUrl || 'assets/default-image.jpg'" alt="{{ item.title }}" class="song-image" />
+          <div class="song-details">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.artist }}</p>
+            <p>{{ item.album }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ... (existing code) -->
+
+    <div class="favorite-artists-section">
+      <h2>Favorite Artists</h2>
+      <div class="favorite-artists-list">
+        <br>
+        <div *ngFor="let artist of favoriteArtists" class="artist-item">
+          <div class="artist-container">
+            <img [src]="artist.imageUrl" alt="{{ artist.name }}" class="artist-image" />
+            <button class="play-button" (click)="playArtist(artist)">Play</button>
+          </div>
+          <div class="artist-details">
+            <h3>{{ artist.name }}</h3>
+            <p>{{ artist.album }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="current-song-bar">
+    <!-- Current song bar content goes here -->
+  </div>
+</div>

@@ -1,0 +1,165 @@
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.side-navbar {
+  width: 250px;
+  background-color: #040404;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.side-navbar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Display children in a column */
+}
+
+.favorite-artists-section {
+  margin-bottom: 10px;
+  padding: 40px;
+  background-color: #000;
+  /* display: flex; */
+  /* flex-direction: row; Ensure horizontal layout */
+  overflow-x: auto;
+}
+
+.favorite-artists-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 50px;
+}
+
+.favorite-artists-section h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.artist-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.artist-container {
+  position: relative;
+}
+
+
+.artist-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.artist-details {
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.artist-details h3 {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #1db954;
+  color: white;
+  padding: 15px;
+  width: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  
+}
+
+
+.artist-details p {
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.recently-played-section {
+  margin-bottom: 20px;
+  padding: 40px;
+  background-color: #000;
+  overflow-x: hidden; /* Change to 'hidden' */
+}
+
+
+.recently-played-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Set the text color for the heading within recently-played-section */
+.recently-played-section h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.song-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.song-image {
+  width: 150px; /* Adjust the width as needed for larger images */
+  height: 150px; /* Adjust the height as needed for larger images */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.song-details {
+  text-align: center;
+}
+
+.song-details h3 {
+  margin-top: 10px; /* Add 'px' */
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.song-details p {
+  margin: 0;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}

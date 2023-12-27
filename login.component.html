@@ -1,0 +1,16 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <img src="assets/spotify-logo.jpg" alt="Spotify Logo">
+  <h2>Log in to Spotify</h2>
+  <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="usernameOrEmail">Email or Username:</label>
+          <input type="text" id="usernameOrEmail" name="usernameOrEmail" [(ngModel)]="usernameOrEmail" required placeholder="Email or Username">
+      </div>
+      <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" required placeholder="Password">
+      </div>
+      <button type="submit" routerLink="/"><b>Log In</b></button>
+  </form>
+</div>
